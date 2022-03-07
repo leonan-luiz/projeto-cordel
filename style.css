@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Roboto:wght@400;700&family=Sriracha&display=swap');
+
+
+:root{
+    --font0: 'Sriracha', cursive;
+    --font1: 'Passion One', Arial;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+/*body*/
+html, body{
+    background-color: gray;
+    min-height: 100vh;
+}
+
+
+/*header*/
+
+header{   
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header h1{
+    font-family: var(--font1);
+    font-weight: normal;
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding-bottom: 50px;
+}
+
+/*link*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{ 
+    text-decoration: underline;
+    color: gray; 
+}
+
+/*section*/
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font0);
+    font-size: 3.7vw;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    box-shadow: 6px 6px 13px 0px rgb(0, 0, 0);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem p {
+    background-color: rgba(0, 0, 0, 0.315);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+}
+
+
+section#img02{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+   
+}
+/*Footer*/
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
